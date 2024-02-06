@@ -16,7 +16,7 @@ import com.mongodb.client.MongoClients;
  */
 public class ConnexionMongo {
     public MongoClient getConnection() {
-        String connectionString = "mongodb+srv://fenosue:KfVerl6WwTaD2Qyz@cluster0.di0iu4p.mongodb.net/";
+        String connectionString = "mongodb+srv://ac-brxya7s-shard-00-00.di0iu4p.mongodb.net:27017";
         MongoClientSettings settings = MongoClientSettings.builder().applyConnectionString(new ConnectionString(connectionString)).build();
         return MongoClients.create(settings);
     }
